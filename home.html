@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Layout Responsivo</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <h2>Rockstar G</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia nemo iste ab unde, delectus ducimus quo adipisci architecto libero totam consequatur rem cum, ipsam veritatis culpa tempore. Similique error eaque animi reiciendis facilis beatae enim inventore! Voluptate, maiores sapiente.</p>  
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, quo eligendi, velit neque saepe odit quod asperiores laboriosam repellat possimus blanditiis nulla tempore quibusdam veniam exercitationem similique quisquam dolor nesciunt.</p>              
+            </div>
+        </div>
+
+        <div class="imgBx">
+            <img src="img/rockstar.png" alt="rockstar_logo">
+        </div>
+
+        <ul class="nav" id="nav">
+            <li><a href="home.html" class="active">Início</a></li>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="jogo.html">Jogo</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Outros</a></li>
+        </ul>
+
+        <ul class="scm">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>  
+
+    <script type="text/javascript">
+        function menuToggle(){
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active')
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>

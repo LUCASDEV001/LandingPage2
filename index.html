@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Layout Responsivo</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <h2>Niko Bellic</h2>
+                <p>Niko Bellic é um personagem fictício da franquia de jogos eletrônicos Grand Theft Auto, da qual é o protagonista jogável do sexto principal jogo da série, Grand Theft Auto IV, de 2008.</p>
+                <a href="https://gta.fandom.com/wiki/Niko_Bellic" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="imgBx">
+            <img src="img/niko.png" alt="personagem_niko">
+        </div>
+
+        <ul class="nav" id="nav">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="index.html" class="active">Sobre</a></li>
+            <li><a href="jogo.html">Jogo</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Outros</a></li>
+        </ul>
+
+        <ul class="scm">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>  
+
+    <script type="text/javascript">
+        function menuToggle(){
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active')
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>

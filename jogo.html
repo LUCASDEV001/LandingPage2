@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Layout Responsivo</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <h2>Grand Theft Auto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla hic eligendi rerum dolore ducimus sequi optio quibusdam dignissimos quia, eveniet, tenetur perspiciatis cupiditate quos, odit praesentium sit at vero.</p>                
+            </div>
+        </div>
+
+        <div class="imgBx">
+            <img src="img/image1.png" alt="gta_logo">
+        </div>
+
+        <ul class="nav" id="nav">
+            <li><a href="home.html">Início</a></li>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="jogo.html" class="active">Jogo</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Outros</a></li>
+        </ul>
+        
+    </section>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>  
+
+    <script type="text/javascript">
+        function menuToggle(){
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active')
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
